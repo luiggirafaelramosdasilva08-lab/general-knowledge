@@ -18,3 +18,57 @@ O conjunto de caracteres UTF-8 pode parecer insignificante, mas é crucial para 
 de caracteres poderá levar a um comprometimento da segurança.
 Há uma grande quantidade de informações de histórico e técnicas por trás do conjunto de caracteres.
 O panorama é que esse clichê de texto fornece alguns padrões pertinentes.
+
+Para estilizar os elementos HTML na página, você pode escrever o código CSS diretamente no cabeçalho do site, que é chamado de CSS interno.
+No entanto, separar a estrutura HTML e o estilo CSS é uma prática recomendada.
+Ter uma página de CSS separada é chamado de CSS externo.
+
+Dica
+O código tende a ser mais fácil de ler quando ele é conciso compartimentalizado.
+Você pode usar uma ou mais folhas de estilos externas para atender a várias páginas da Web.
+Em vez de atualizar cada página HTML com o CSS duplicado, você pode fazer alterações uma única vez e difundir essas atualizações para todas as páginas dependentes.
+
+No Visual Studio Code, adicione uma linha em branco após o elemento <title>.
+Digite link e pressione a tecla Enter (Return).
+Atualize o href para main.css e salve o arquivo com Control + S (Windows)
+
+    entao fica assim:
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+Editar o corpo
+Vamos começar preenchendo o elemento corpo.
+
+Adicione um cabeçalho <h1>, parágrafo <p> e crie um item de lista <li>.
+Edite ou copie e cole o seu código para que ele fique conforme demonstrado na imagem.
+    
+Curiosidade
+Um atributo de ID (usado no <p>) pode ser empregado para estilizar um elemento, enquanto o atributo de classe (usado no <li>) é usado para estilizar todos os elementos da mesma classe.
+Cada elemento <li> de item de lista é agrupado em uma lista não ordenada <ul>.
+    entao fica assim:
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Task List</h1>
+    <p id="msg">Current tasks:</p>
+    <ul>
+        <li class="list">Add visual styles</li>
+        <li class="list">Add Light and Dark themes</li>
+        <li>Enable switching the theme</li>
+      </ul>
+    </body>
+  </html>
