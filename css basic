@@ -1,0 +1,39 @@
+CSS é a sigla para Cascading Style Sheets (em português, Folhas de Estilo em Cascata), que permite que você
+especifique qual deve ser a aparência de sua página.
+A ideia básica é direcionar ao código HTML, depois definir qual o estilo deve ser. Por exemplo, você pode
+marcar uma caixa e aplicar à ela cantos arredondados ou uma tela de fundo gradiente.
+O CSS é responsável por determinar a aparência dos hiperlinks e como eles respondem ao interagir com eles – embora você
+defina o endereço de destino em HTML.
+No CSS3, você também pode criar efeitos de animação sofisticados.
+
+CSS externo:
+No exercício anterior sobre HTML, você vinculou um arquivo CSS externo por meio de HTML.
+Um benefício do CSS externo é que várias páginas HTML podem ser vinculadas ao mesmo arquivo CSS.
+Se você fizer uma alteração ao CSS, seu estilo será atualizado para cada página.
+Designar um arquivo HTML para a estrutura da página e um arquivo CSS para a definição de estilos e arquivos
+JavaScript para interação ou eventos é chamado de separação de interesses.
+Como mencionamos anteriormente, você também pode escrever CSS diretamente em HTML, o que é chamado de CSS interno.
+Mesmo para um site básico, há tantas regras de CSS que a página HTML pode ficar desorganizada muito rapidamente.
+Com mais de uma página, o mesmo CSS seria repetido com frequência e se tornaria difícil de gerenciar.
+
+Regras de CSS:
+Para entender como funcionam as regras de CSS, imagine que você tenha uma chave antiga e uma série de portas em um corredor longo.
+Primeiro, você seleciona uma porta. Então, você destranca a porta com a chave.
+Depois de ter acesso a uma sala, você pode decorá-la como quiser. Você pode pintar as paredes de azul ou definir o piso como sendo de madeira.
+Você seleciona uma sala e define as regras sobre como ela deve parecer.
+Você pode aplicar o mesmo estilo a várias salas, que é exatamente como funciona o CSS!
+
+pratica:
+arquivo main.css coloque:
+body {
+    font-family: monospace;
+}
+ul {
+    font-family: helvetica;
+}
+
+Você pode usar regras de CSS para aplicar estilos ao HTML.
+O elemento de lista não ordenada ul {} é um seletor que seleciona o elemento HTML <ul> ao qual aplicará os estilos.
+A declaração é font-family: helvetica e informa o que esse estilo deve ser.
+O nome da propriedade é font-family e o valor é helvetica. A propriedade e o valor juntos formam um par chave-valor.
+O que você selecionará é um elemento existente que definimos anteriormente em HTML (<body> e <ul>).
