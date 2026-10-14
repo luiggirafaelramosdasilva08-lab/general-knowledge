@@ -21,13 +21,13 @@ html
 
 🧠 O que aprendi
 
-- 🌐 **HTML5:** estrutura básica de uma página web.
-- 🏷️ `<!DOCTYPE html>`: indica que o documento utiliza HTML5.
-- 🔤 `meta charset="UTF-8"`: permite exibir corretamente letras, acentos e caracteres especiais.
-- 🔎 **Meta tags:** fornecem informações sobre a página, que podem ajudar os navegadores e mecanismos de pesquisa.
-- 📄 `<title>`: define o título da página exibido na aba do navegador.
-- 🎨 `<link rel="stylesheet" href="main.css">`: conecta o HTML a um arquivo CSS externo.
-- 📝 **CSS interno e externo:** o CSS interno fica no HTML, enquanto o externo fica em um arquivo separado. Separar os arquivos facilita a organização e a manutenção do código.
+- 🌐 HTML5: estrutura básica de uma página web.
+- 🏷️ <!DOCTYPE html>: indica que o documento utiliza HTML5.
+- 🔤 meta charset="UTF-8": permite exibir corretamente letras, acentos e caracteres especiais.
+- 🔎 Meta tags: fornecem informações sobre a página, que podem ajudar os navegadores e mecanismos de pesquisa.
+- 📄 <title>: define o título da página exibido na aba do navegador.
+- 🎨 <link rel="stylesheet" href="main.css">: conecta o HTML a um arquivo CSS externo.
+- 📝 CSS interno e externo: o CSS interno fica no HTML, enquanto o externo fica em um arquivo separado. Separar os arquivos facilita a organização e a manutenção do código.
 - 📰 `<h1>`: cria um título principal.
 - 📃 `<p>`: cria um parágrafo.
 - 📋 `<ul>`: cria uma lista não ordenada.
@@ -35,10 +35,10 @@ html
 - 🆔 `id`: identifica um elemento específico, como o parágrafo com `id="msg"`.
 - 🏷️ `class`: permite aplicar estilos a vários elementos que compartilham a mesma classe, como `class="list"`.
 
-## 🎯 Objetivo da prática
+🎯 Objetivo da prática
 
 Aprender a estrutura básica do HTML5, utilizar as principais tags, identificar elementos com `id` e `class` e conectar uma folha de estilos CSS externa para organizar e estilizar páginas web.
 
-## 💡 Curiosidade
+💡 Curiosidade
 
 Manter o HTML separado do CSS deixa o código mais organizado e permite reutilizar os mesmos estilos em várias páginas, facilitando futuras alterações.
