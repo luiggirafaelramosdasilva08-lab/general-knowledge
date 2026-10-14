@@ -1,64 +1,7 @@
-pratica no arquivo
-index.html colooque:
+💻 Código HTML (`index.html`)
 
-html:5
+html
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-
-Há diferentes versões de HTML
-O tipo de documento <!doctype html> indica que este código é HTML5. Não nos aprofundaremos no significado de todos os elementos HTML, mas apontaremos alguns itens importantes.
-A marca meta indica informações de metadados que normalmente não ficarão visíveis para o visualizador, a menos que ele use o próprio navegador para exibir o código-fonte.
-Metaelementos ou metamarcas fornecem informações descritivas sobre a página da Web. Por exemplo, eles ajudam os mecanismos de pesquisa a exibir resultados para as pessoas.
-O conjunto de caracteres UTF-8 pode parecer insignificante, mas é crucial para estabelecer o modo como os computadores interpretam caracteres. Se estiver ausente, o conjunto
-de caracteres poderá levar a um comprometimento da segurança.
-Há uma grande quantidade de informações de histórico e técnicas por trás do conjunto de caracteres.
-O panorama é que esse clichê de texto fornece alguns padrões pertinentes.
-
-Para estilizar os elementos HTML na página, você pode escrever o código CSS diretamente no cabeçalho do site, que é chamado de CSS interno.
-No entanto, separar a estrutura HTML e o estilo CSS é uma prática recomendada.
-Ter uma página de CSS separada é chamado de CSS externo.
-
-Dica
-O código tende a ser mais fácil de ler quando ele é conciso compartimentalizado.
-Você pode usar uma ou mais folhas de estilos externas para atender a várias páginas da Web.
-Em vez de atualizar cada página HTML com o CSS duplicado, você pode fazer alterações uma única vez e difundir essas atualizações para todas as páginas dependentes.
-
-No Visual Studio Code, adicione uma linha em branco após o elemento <title>.
-Digite link e pressione a tecla Enter (Return).
-Atualize o href para main.css e salve o arquivo com Control + S (Windows)
-
-    entao fica assim:
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-    
-</body>
-</html>
-
-Editar o corpo
-Vamos começar preenchendo o elemento corpo.
-
-Adicione um cabeçalho <h1>, parágrafo <p> e crie um item de lista <li>.
-Edite ou copie e cole o seu código para que ele fique conforme demonstrado na imagem.
-    
-Curiosidade
-Um atributo de ID (usado no <p>) pode ser empregado para estilizar um elemento, enquanto o atributo de classe (usado no <li>) é usado para estilizar todos os elementos da mesma classe.
-Cada elemento <li> de item de lista é agrupado em uma lista não ordenada <ul>.
-    entao fica assim:
-    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -71,7 +14,31 @@ Cada elemento <li> de item de lista é agrupado em uma lista não ordenada <ul>.
     <ul>
         <li class="list">Add visual styles</li>
         <li class="list">Add Light and Dark themes</li>
-        <li>Enable switching the theme</li>
+        <li class="list">Enable switching the theme</li>
       </ul>
     </body>
   </html>
+
+🧠 O que aprendi
+
+- 🌐 **HTML5:** estrutura básica de uma página web.
+- 🏷️ `<!DOCTYPE html>`: indica que o documento utiliza HTML5.
+- 🔤 `meta charset="UTF-8"`: permite exibir corretamente letras, acentos e caracteres especiais.
+- 🔎 **Meta tags:** fornecem informações sobre a página, que podem ajudar os navegadores e mecanismos de pesquisa.
+- 📄 `<title>`: define o título da página exibido na aba do navegador.
+- 🎨 `<link rel="stylesheet" href="main.css">`: conecta o HTML a um arquivo CSS externo.
+- 📝 **CSS interno e externo:** o CSS interno fica no HTML, enquanto o externo fica em um arquivo separado. Separar os arquivos facilita a organização e a manutenção do código.
+- 📰 `<h1>`: cria um título principal.
+- 📃 `<p>`: cria um parágrafo.
+- 📋 `<ul>`: cria uma lista não ordenada.
+- 🔹 `<li>`: cria um item de lista.
+- 🆔 `id`: identifica um elemento específico, como o parágrafo com `id="msg"`.
+- 🏷️ `class`: permite aplicar estilos a vários elementos que compartilham a mesma classe, como `class="list"`.
+
+## 🎯 Objetivo da prática
+
+Aprender a estrutura básica do HTML5, utilizar as principais tags, identificar elementos com `id` e `class` e conectar uma folha de estilos CSS externa para organizar e estilizar páginas web.
+
+## 💡 Curiosidade
+
+Manter o HTML separado do CSS deixa o código mais organizado e permite reutilizar os mesmos estilos em várias páginas, facilitando futuras alterações.
