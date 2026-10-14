@@ -1,39 +1,73 @@
-CSS é a sigla para Cascading Style Sheets (em português, Folhas de Estilo em Cascata), que permite que você
-especifique qual deve ser a aparência de sua página.
-A ideia básica é direcionar ao código HTML, depois definir qual o estilo deve ser. Por exemplo, você pode
-marcar uma caixa e aplicar à ela cantos arredondados ou uma tela de fundo gradiente.
-O CSS é responsável por determinar a aparência dos hiperlinks e como eles respondem ao interagir com eles – embora você
-defina o endereço de destino em HTML.
-No CSS3, você também pode criar efeitos de animação sofisticados.
+💻 Código CSS (`main.css`)
 
-CSS externo:
-No exercício anterior sobre HTML, você vinculou um arquivo CSS externo por meio de HTML.
-Um benefício do CSS externo é que várias páginas HTML podem ser vinculadas ao mesmo arquivo CSS.
-Se você fizer uma alteração ao CSS, seu estilo será atualizado para cada página.
-Designar um arquivo HTML para a estrutura da página e um arquivo CSS para a definição de estilos e arquivos
-JavaScript para interação ou eventos é chamado de separação de interesses.
-Como mencionamos anteriormente, você também pode escrever CSS diretamente em HTML, o que é chamado de CSS interno.
-Mesmo para um site básico, há tantas regras de CSS que a página HTML pode ficar desorganizada muito rapidamente.
-Com mais de uma página, o mesmo CSS seria repetido com frequência e se tornaria difícil de gerenciar.
-
-Regras de CSS:
-Para entender como funcionam as regras de CSS, imagine que você tenha uma chave antiga e uma série de portas em um corredor longo.
-Primeiro, você seleciona uma porta. Então, você destranca a porta com a chave.
-Depois de ter acesso a uma sala, você pode decorá-la como quiser. Você pode pintar as paredes de azul ou definir o piso como sendo de madeira.
-Você seleciona uma sala e define as regras sobre como ela deve parecer.
-Você pode aplicar o mesmo estilo a várias salas, que é exatamente como funciona o CSS!
-
-pratica:
-arquivo main.css coloque:
 body {
     font-family: monospace;
 }
+
 ul {
     font-family: helvetica;
 }
 
-Você pode usar regras de CSS para aplicar estilos ao HTML.
-O elemento de lista não ordenada ul {} é um seletor que seleciona o elemento HTML <ul> ao qual aplicará os estilos.
-A declaração é font-family: helvetica e informa o que esse estilo deve ser.
-O nome da propriedade é font-family e o valor é helvetica. A propriedade e o valor juntos formam um par chave-valor.
-O que você selecionará é um elemento existente que definimos anteriormente em HTML (<body> e <ul>).
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+.light-theme {
+    color: var(--green);
+    background: var(--black);
+}
+
+.dark-theme {
+    color: var(--black);
+    background: var(--green);
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
+}
+
+🧠 O que aprendi
+
+- 🎨 CSS: define a aparência e o estilo das páginas web.
+- 📄 CSS externo: permite separar o estilo do HTML e reutilizar o mesmo arquivo em várias páginas.
+- 🎯 Seletores: indicam quais elementos HTML receberão os estilos.
+- 🔤 `font-family`: define o tipo de fonte do texto.
+- 📋 `list-style`: define o formato dos marcadores de uma lista.
+- 🏷️ `.list`: seletor de classe, identificado pelo ponto.
+- 🆔 `#msg`: seletor de ID, identificado pelo símbolo `#`.
+- 🌱 `:root`: permite definir variáveis CSS globais.
+- 🎨 `color`: define a cor do texto.
+- 🖼️ `background`: define a cor de fundo.
+- 🔢 Variáveis CSS: armazenam valores reutilizáveis, como cores.
+- 🔑 `var()`: utiliza o valor de uma variável CSS.
+- 🌍 `*`: seletor universal, que seleciona todos os elementos.
+- ☀️ `.light-theme`: classe usada para o tema claro.
+- 🌙 `.dark-theme`: classe usada para o tema escuro.
+- 🔍 Ferramentas do desenvolvedor: permitem inspecionar o HTML e verificar os estilos aplicados no navegador.
+
+🎯 Objetivo da prática
+
+Aprender a estilizar páginas HTML com CSS, utilizar seletores, fontes, listas, cores e variáveis, além de preparar temas claro e escuro para uma futura alternância usando JavaScript.
+
+💡 Curiosidade
+
+Separar HTML, CSS e JavaScript ajuda a manter o projeto organizado: HTML estrutura a página, CSS define a aparência e JavaScript adiciona interatividade.
