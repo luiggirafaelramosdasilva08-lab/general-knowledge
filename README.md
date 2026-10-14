@@ -1,2 +1,2 @@
 # simple dark and light theme system
-Este repositório será utilizado para registrar minhas anotações, observações e aprendizados durante meus estudos de HTML, CSS, JavaScript e Python, aprimorando meus conhecimentos em programação e desenvolvimento de software.
+Sistema simples de alternância entre os temas claro e escuro, desenvolvido com HTML, CSS e JavaScript. Projeto para praticar desenvolvimento web, personalização de interfaces e interatividade.
