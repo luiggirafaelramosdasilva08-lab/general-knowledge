@@ -1,0 +1,142 @@
+1. 🌐 HTML — Código (main.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="light-theme">
+    <h1>Task List</h1>
+    <p id="msg">Current tasks:</p>
+
+    <ul>
+        <li class="list">Add visual styles</li>
+        <li class="list">Add Light and Dark themes</li>
+        <li>Enable switching the theme</li>
+    </ul>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+🧠 O que aprendi:
+- 🌐 <script src="app.js"> = conecta o JavaScript ao HTML.
+- ⚠️ <noscript> = mostra uma mensagem se o JavaScript estiver desativado.
+- 🔘 <button> = cria um botão.
+- 📦 <div> = agrupa elementos.
+2. 🎨 CSS — Código (main.css)
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: monospace;
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+
+* {
+    color: var(--fontColor);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background: var(--btnBg);
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline-style: none;
+}
+
+
+🧠 O que aprendi:
+- 🎨 CSS = define a aparência da página.
+- 🌱 :root = define variáveis globais.
+- 🖌️ color = cor do texto.
+- 🖼️ background = cor de fundo.
+- 🔘 border-radius = arredonda o botão.
+- 📏 height e width = altura e largura.
+- 👆 cursor: pointer = mostra a mão ao passar sobre o botão.
+- 🎯 .btn = seleciona o botão pela classe.
+- 🔄 position: absolute = permite posicionar o botão em um local específico.
+3. ⚙️ JavaScript — Código (app.js)
+'use strict';
+
+const switcher = document.querySelector('.btn');
+
+switcher.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+
+    if (document.body.classList.contains('dark-theme')) {
+        this.textContent = 'Light';
+    } else {
+        this.textContent = 'Dark';
+    }
+
+    console.log('current class name: ' + document.body.className);
+});
+
+
+🧠 O que aprendi:
+- ⚙️ JavaScript = adiciona interatividade à página.
+- 🔒 'use strict' = ativa o modo estrito.
+- 📦 const = declara uma variável que não pode ser reatribuída.
+- 🔎 document.querySelector() = encontra um elemento HTML.
+- 👆 addEventListener('click') = executa uma função quando ocorre um clique.
+- 🔄 classList.toggle() = adiciona ou remove uma classe.
+- ✅ if = verifica uma condição.
+- ➡️ else = executa outra opção.
+- 📝 textContent = altera o texto de um elemento.
+- 🖥️ console.log() = mostra informações no console do navegador.
+
+4. 🎯 Resultado final
+Quando o usuário clica no botão Dark, o JavaScript ativa o tema escuro e muda o texto do botão para Light. Ao clicar novamente, retorna ao tema claro.
+💡 Resumindo: HTML cria a estrutura → CSS define a aparência → JavaScript adiciona interatividade. 🚀
